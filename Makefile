@@ -64,6 +64,11 @@ install: dummy
 	cd src && $(INSTALL_DATA) $(TO_LIB) $(INSTALL_LIB)
 	cd doc && $(INSTALL_DATA) $(TO_MAN) $(INSTALL_MAN)
 
+install_lib: dummy
+	cd src && $(MKDIR) $(INSTALL_INC) $(INSTALL_LIB) 
+	cd src && $(INSTALL_DATA) $(TO_INC) $(INSTALL_INC)
+	cd src && $(INSTALL_DATA) $(TO_LIB) $(INSTALL_LIB)
+
 uninstall:
 	cd src && cd $(INSTALL_BIN) && $(RM) $(TO_BIN)
 	cd src && cd $(INSTALL_INC) && $(RM) $(TO_INC)
