@@ -5,5 +5,11 @@
   "description": "lua packaged for clib",
   "keywords": ["scripting", "lua", "sandbox"],
   "license": "MIT",
-  "install": "make linux install_lib"
+  "prepare": "make linux"
+  "src": [
+    "src/lua.h",
+    "src/lua.hpp",
+    "src/lualib.h",
+    "src/lauxlib.h"
+  ]
 }
