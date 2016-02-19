@@ -10,6 +10,8 @@
     "src/lua.h",
     "src/lua.hpp",
     "src/lualib.h",
-    "src/lauxlib.h"
+    "src/lauxlib.h",
+    "src/liblua.a",
+    "src/liblua.so"
   ]
 }
