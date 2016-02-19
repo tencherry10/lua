@@ -5,5 +5,5 @@
   "description": "lua packaged for clib",
   "keywords": ["scripting", "lua", "sandbox"],
   "license": "MIT",
-  "install": "make install_lib"
+  "install": "make linux install_lib"
 }
